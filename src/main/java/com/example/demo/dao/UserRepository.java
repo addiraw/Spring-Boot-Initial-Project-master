@@ -6,5 +6,5 @@ import com.example.demo.entity.Course;
 // import because it help in below code see Course 
 
 public interface UserRepository extends CrudRepository<Course, Integer> {
-
+    public Course findById(int id);
 }

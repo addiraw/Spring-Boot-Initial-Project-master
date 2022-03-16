@@ -4,13 +4,17 @@ package com.example.demo.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 //model class for making models as process
-@Entity
+@Entity//imp
+@Table(name="courses")
 public class Course {
-	@Id
+	@Id//imp
 	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name = "courseId")//column name annotation
 	private long id;
 	private String title;
 	private String description;

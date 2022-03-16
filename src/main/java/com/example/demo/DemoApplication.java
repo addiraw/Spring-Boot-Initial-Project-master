@@ -20,6 +20,12 @@ public class DemoApplication {
 		course.setDescription("First");
 		Course course1 = userRepository.save(course);
 		System.out.println(course1);
+
+		Course course2 = new Course();
+		course2.setTitle("Aditya");
+		course2.setDescription("First");
+		Course course3 = userRepository.save(course);
+		System.out.println(course3);
 	}
 
 }
